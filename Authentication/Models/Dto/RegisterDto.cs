@@ -12,5 +12,6 @@ namespace Authentication.Models.Dto
         public string Password { get; set; }
         [Required]
         public string PhoneNumber { get; set; }
+        public string? Role { get; set; } = string.Empty;
     }
 }
