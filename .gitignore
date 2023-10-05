@@ -1,0 +1,114 @@
+# Visual Studio Code
+.vscode/
+.vs/
+
+# User-specific files
+.vscode/settings.json
+.vscode/tasks.json
+.vscode/launch.json
+.vscode/extensions.json
+
+# C# build results
+bin/
+obj/
+
+# .NET Sln files
+*.sln.ide
+*.sln.iml
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Visual Studio files
+.vscode/
+
+# Rider files
+.idea/
+
+# User-specific files
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Mono Auto Generated Files
+mono_crash.*
+
+# Windows image file caches
+Thumbs.db
+ehthumbs.db
+
+# Folder config file
+Desktop.ini
+
+# Recycle Bin used on file shares
+$RECYCLE.BIN/
+
+# VS Code directories
+.vscode/
+
+# Windows Installer files
+*.cab
+*.msi
+*.msm
+*.msp
+
+# Windows shortcuts
+*.lnk
+
+# JetBrains Rider
+.idea/
+*.sln.iml
+.idea/misc.xml
+.idea/modules.xml
+.idea/workspace.xml
+.idea/tasks.xml
+.idea/.name
+
+# User-specific files
+.idea/*
+!*.sln
+!*.suo
+!*.user
+!*.userosscache
+!*.sln.docstates
+
+# Rider
+.idea/
+
+# User-specific files
+.idea/workspace.xml
+.idea/tasks.xml
+.idea/vcs.xml
+.idea/vcs.history/
+.idea/shelf/
+
+# User-specific files
+.idea/*.sln.iml
+.idea/*.iml
+.idea/modules.xml
+.idea/misc.xml
+.idea/gradle.xml
+.idea/vcs.xml
+.idea/vcs.history/
+.idea/dictionaries/
+
+# User-specific files
+.idea/*.sln.iml
+.idea/*.iml
+.idea/misc.xml
+.idea/vcs.xml
+.idea/vcs.history/
+
+# .NET Core
+project.lock.json
+project.fragment.lock.json
+artifacts/
+**/bin
+**/obj
+
+# Tye
+.tye/
+.tye.yaml
+.tye-debug.yaml
