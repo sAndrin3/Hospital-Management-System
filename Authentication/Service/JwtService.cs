@@ -28,7 +28,9 @@ namespace Authentication.Service
             //payload-data
             List<Claim> claims = new List<Claim>();
             claims.Add(new Claim(JwtRegisteredClaimNames.Name, user.Name));
+            claims.Add(new Claim(JwtRegisteredClaimNames.PhoneNumber, user.PhoneNumber));
             claims.Add(new Claim(JwtRegisteredClaimNames.Sub, user.Id));
+            claims.Add(new Claim(JwtRegisteredClaimNames.Email, user.Email));
 
             //add Roles
             claims.AddRange(roles.Select(r => new Claim(ClaimTypes.Role, r)));
