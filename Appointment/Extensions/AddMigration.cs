@@ -1,7 +1,7 @@
-﻿using Appointment.Data;
+﻿using AppointmentManagement.Data;
 using Microsoft.EntityFrameworkCore;
 
-namespace Appointment.Extensions
+namespace AppointmentManagement.Extensions
 {
     public static class AddMigration
     {

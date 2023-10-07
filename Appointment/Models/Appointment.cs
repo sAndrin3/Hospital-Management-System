@@ -1,6 +1,6 @@
-﻿namespace Appointment.Models
+﻿namespace AppointmentManagement.Models
 {
-    public class Appointment
+    public class Appointment1
     {
         public Guid AppointmentId { get; set; }
         public Guid DoctorId { get; set; }

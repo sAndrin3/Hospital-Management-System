@@ -1,8 +1,9 @@
 ﻿
+using AppointmentManagement.Models;
 using Microsoft.EntityFrameworkCore;
 
 
-namespace Appointment.Data
+namespace AppointmentManagement.Data
 {
     public class AppDbContext : DbContext
     {
@@ -12,7 +13,7 @@ namespace Appointment.Data
         }
 
 
-        public DbSet<Models.Appointment> Appointments { get; set; }
+        public DbSet<Appointment1> Appointment1s { get; set; }
     }
 }
 

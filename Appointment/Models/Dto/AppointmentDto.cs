@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace Appointment.Models.Dto
+namespace AppointmentManagement.Models.Dto
 {
     public class AppointmentDto
     {
@@ -16,8 +16,12 @@ namespace Appointment.Models.Dto
 
         [Required]
         [DataType(DataType.Time)]
-        public TimeSpan AppointmentTime { get; set; }
+        public AppointmentTimeDto AppointmentTime { get; set; }
 
         public string Symptoms { get; set; } = string.Empty;
+    }
+    public class AppointmentTimeDto
+    {
+        public TimeSpan Ticks { get; set; }
     }
 }

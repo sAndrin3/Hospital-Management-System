@@ -1,4 +1,6 @@
-using Appointment.Data;
+using AppointmentManagement.Data;
+using AppointmentManagement.Service;
+using AppointmentManagement.Service.IService;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -12,6 +14,12 @@ builder.Services.AddSwaggerGen();
 
 // Adding Db Connection
 builder.Services.AddDbContext<AppDbContext>(options => { options.UseSqlServer(builder.Configuration.GetConnectionString("defaultConnection")); });
+
+//AutoMapper
+builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
+
+//service
+builder.Services.AddScoped<IAppointmentService, AppointmentService>();
 
 
 var app = builder.Build();
